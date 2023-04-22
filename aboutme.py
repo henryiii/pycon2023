@@ -2,6 +2,7 @@ from rich.console import Console
 from rich.markdown import Markdown
 from rich.panel import Panel
 from rich.align import Align
+import time
 
 
 WEB = """
@@ -39,6 +40,7 @@ check-sdist
 
 console = Console()
 
+console.print()
 console.print(
     Panel(
         Align("[bold]Henry Schreiner", align="center"),
@@ -60,3 +62,4 @@ console.print(
         align="right",
     )
 )
+console.print()
